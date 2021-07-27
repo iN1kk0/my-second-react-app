@@ -1,20 +1,17 @@
 {
   "files": {
-    "main.css": "/my-second-react-app/static/css/main.718c64c8.chunk.css",
-    "main.js": "/my-second-react-app/static/js/main.f2f2d6cd.chunk.js",
-    "main.js.map": "/my-second-react-app/static/js/main.f2f2d6cd.chunk.js.map",
+    "main.js": "/my-second-react-app/static/js/main.b2189e84.chunk.js",
+    "main.js.map": "/my-second-react-app/static/js/main.b2189e84.chunk.js.map",
     "runtime-main.js": "/my-second-react-app/static/js/runtime-main.f539c843.js",
     "runtime-main.js.map": "/my-second-react-app/static/js/runtime-main.f539c843.js.map",
-    "static/js/2.0d13700c.chunk.js": "/my-second-react-app/static/js/2.0d13700c.chunk.js",
-    "static/js/2.0d13700c.chunk.js.map": "/my-second-react-app/static/js/2.0d13700c.chunk.js.map",
+    "static/js/2.82cda897.chunk.js": "/my-second-react-app/static/js/2.82cda897.chunk.js",
+    "static/js/2.82cda897.chunk.js.map": "/my-second-react-app/static/js/2.82cda897.chunk.js.map",
     "index.html": "/my-second-react-app/index.html",
-    "static/css/main.718c64c8.chunk.css.map": "/my-second-react-app/static/css/main.718c64c8.chunk.css.map",
-    "static/js/2.0d13700c.chunk.js.LICENSE.txt": "/my-second-react-app/static/js/2.0d13700c.chunk.js.LICENSE.txt"
+    "static/js/2.82cda897.chunk.js.LICENSE.txt": "/my-second-react-app/static/js/2.82cda897.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f539c843.js",
-    "static/js/2.0d13700c.chunk.js",
-    "static/css/main.718c64c8.chunk.css",
-    "static/js/main.f2f2d6cd.chunk.js"
+    "static/js/2.82cda897.chunk.js",
+    "static/js/main.b2189e84.chunk.js"
   ]
 }
