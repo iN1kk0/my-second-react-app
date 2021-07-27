@@ -1,6 +1,50 @@
 import { useSelector, useDispatch } from "react-redux";
 import * as constants from "../../store/constants/products";
-import "./index.css";
+import styled from "styled-components";
+
+const Product = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+`;
+
+const ProductName = styled.div`
+  font-size: 30px;
+  font-weight: 300;
+`;
+
+const ProductButtonsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  height: 40px;
+  overflow: hidden;
+  min-width: 110px;
+`;
+
+const ProductButtonsWrapperButton = styled.button`
+  background: #4d8cea;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  height: 100%;
+  font-weight: 300;
+`;
+
+const ProductButtonsWrapperDiv = styled.div`
+  background: #4d8cea;
+  min-width: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+`;
 
 export default function Products() {
   const dispatch = useDispatch();
@@ -31,22 +75,25 @@ export default function Products() {
     <div className="products">
       <h1>Products</h1>
       {products.map((product) => (
-        <div className="product" key={product.name}>
-          <div className="product__name">
+        <Product key={product.name}>
+          <ProductName>
             {product.name} - ${product.price}
-          </div>
-          <div className="product__buttons-wrapper">
-            <button data-id={product.id} onClick={onRemove}>
+          </ProductName>
+          <ProductButtonsWrapper>
+            <ProductButtonsWrapperButton
+              data-id={product.id}
+              onClick={onRemove}
+            >
               -
-            </button>
-            <div>
+            </ProductButtonsWrapperButton>
+            <ProductButtonsWrapperDiv>
               <span>{product.count || "0"}</span>
-            </div>
-            <button data-id={product.id} onClick={onAdd}>
+            </ProductButtonsWrapperDiv>
+            <ProductButtonsWrapperButton data-id={product.id} onClick={onAdd}>
               +
-            </button>
-          </div>
-        </div>
+            </ProductButtonsWrapperButton>
+          </ProductButtonsWrapper>
+        </Product>
       ))}
     </div>
   );
