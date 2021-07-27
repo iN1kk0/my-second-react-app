@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux";
+import * as constants from "../../store/constants/products";
 import "./index.css";
 
 export default function Products() {
@@ -9,7 +10,7 @@ export default function Products() {
     const { id } = event.target.dataset;
 
     dispatch({
-      type: "Add product",
+      type: constants.ADD_PRODUCT,
       payload: { id },
     });
   };
@@ -20,7 +21,7 @@ export default function Products() {
 
     if (product.count >= 1) {
       dispatch({
-        type: "Remove product",
+        type: constants.REMOVE_PRODUCT,
         payload: { id },
       });
     }
