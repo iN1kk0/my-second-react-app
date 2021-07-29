@@ -48,7 +48,7 @@ const ProductButtonsWrapperDiv = styled.div`
 
 export default function Products() {
   const dispatch = useDispatch();
-  const products = useSelector((store) => store.items);
+  const products = useSelector((store) => store.productsReducer.items);
 
   const onAdd = (event) => {
     const { id } = event.target.dataset;
@@ -75,7 +75,7 @@ export default function Products() {
     <div className="products">
       <h1>Products</h1>
       {products.map((product) => (
-        <Product key={product.name}>
+        <Product key={product.id}>
           <ProductName>
             {product.name} - ${product.price}
           </ProductName>

@@ -16,7 +16,7 @@ const Button = styled.button`
 `;
 
 export default function Basket() {
-  const products = useSelector((store) => store.items);
+  const products = useSelector((store) => store.productsReducer.items);
   const price = products
     .filter((product) => !!product.count)
     .map((product) => product.price * product.count)
